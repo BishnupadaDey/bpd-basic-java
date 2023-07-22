@@ -12,14 +12,23 @@ public class Main {
         printPattern(" * ",15);
     }
 
+    /**
+     * This method prints the triangle pattern with the required symbol and height of triangle.
+     * @param symbol to be printed.
+     * @param row height of triangle.
+     */
     private static void printPattern(String symbol, int row){
+        // height loop.
         for (int line=0;line<row;line++){
+            // space loop.
             for (int space=0; space<(row-line);space++){
                 System.out.print(" ");
             }
+            // symbol loop.
             for (int ptrn=((row)-line);ptrn<=row;ptrn++){
                 System.out.print(" * ");
             }
+            //newline.
             System.out.println();
         }
     }
