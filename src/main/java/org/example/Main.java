@@ -15,17 +15,17 @@ public class Main {
     /**
      * This method prints the triangle pattern with the required symbol and height of triangle.
      * @param symbol to be printed.
-     * @param row height of triangle.
+     * @param height height of triangle.
      */
-    private static void printPattern(String symbol, int row){
+    private static void printPattern(String symbol, int height){
         // height loop.
-        for (int line=0;line<row;line++){
+        for (int line=0;line<height;line++){
             // space loop.
-            for (int space=0; space<(row-line);space++){
+            for (int space=0; space<(height-line);space++){
                 System.out.print(" ");
             }
             // symbol loop.
-            for (int ptrn=((row)-line);ptrn<=row;ptrn++){
+            for (int ptrn=((height)-line);ptrn<=height;ptrn++){
                 System.out.print(" * ");
             }
             //newline.
